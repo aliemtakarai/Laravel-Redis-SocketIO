@@ -4,7 +4,7 @@ var io = require('socket.io')(server);
 var redis = require('redis');
  
 server.listen(9090);
- 
+
 io.on('connection', function (socket) {
  
     var redisClient = redis.createClient();
